@@ -6,7 +6,27 @@
 using namespace std;
 
 int main()
-{
+{//declare constant and variables
+  const double increase = 1.05;
+  double store1 = 0.0;
+  double store2 = 0.0;
+  double total = 0.0;
+
+  cout << "Store 1 sales: ";
+  cin >> store1;
+  cout << "Store 2 sales: ";
+  cin >> store2;
+
+  store1 = store1 * increase;
+  store2 = store2 * increase;
+  total = store1 + store2;
+
+  cout << fixed << setprecision(2) << endl;
+  cout << store1 << " --->Store 1" << endl;
+  cout << store2 << " --->Store 2" << endl;
+  cout << "-----------------" << endl;
+  cout << total << " --->Total" << endl;
+  return 0;
 
   return 0;
 }	//end of main function
